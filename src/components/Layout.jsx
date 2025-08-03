@@ -8,12 +8,14 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'; // Pour
 import HeroSection from './HeroSection';
 import ProjectSection from './ProjectSection'; // Nous allons créer ce fichier
 import ContactSection from './ContactSection'; // Vous créerez ce fichier plus tard
+import SkillsSection from "./SkillsSection";
 
 function Layout({ activeSection, setActiveSection }) {
   const sections = {
     home: <HeroSection />,
     project: <ProjectSection />,
     contact: <ContactSection />,
+    skills: <SkillsSection />
     // Ajoutez d'autres sections ici
   };
 

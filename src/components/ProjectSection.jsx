@@ -4,7 +4,7 @@ import React from 'react';
 // Composant pour une carte de projet individuelle
 const ProjectCard = ({ title, description, imageUrl, link }) => {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-teal-700 hover:border-purple-500 transition-all duration-300 group">
+    <div className="bg-gray-800 cursor-pointer rounded-lg shadow-lg overflow-hidden border border-teal-700 hover:border-white transition-all duration-300 group">
       <div className="h-56 overflow-hidden">
         <img
           src={imageUrl}
@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, imageUrl, link }) => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center text-purple-400 hover:text-purple-300 font-medium transition duration-300"
+          className="inline-flex items-center text-white hover:text-purple-300 font-medium transition duration-300"
         >
           Voir le projet
           <svg
@@ -77,7 +77,7 @@ function ProjectSection() {
 
   return (
     <section className="relative w-full h-full flex flex-col items-center py-16 px-4 md:px-8 bg-gray-950">
-      <h2 className="text-5xl lg:text-6xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-400 drop-shadow-lg">
+      <h2 className="text-5xl lg:text-6xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r text-white drop-shadow-lg">
         Nos Réalisations
       </h2>
 
