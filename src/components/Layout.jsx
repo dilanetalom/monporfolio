@@ -9,6 +9,7 @@ import HeroSection from './HeroSection';
 import ProjectSection from './ProjectSection'; // Nous allons créer ce fichier
 import ContactSection from './ContactSection'; // Vous créerez ce fichier plus tard
 import SkillsSection from "./SkillsSection";
+import CustomCursor from "./CustomCursor";
 
 function Layout({ activeSection, setActiveSection }) {
   const sections = {
@@ -20,7 +21,8 @@ function Layout({ activeSection, setActiveSection }) {
   };
 
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-100 font-sans flex flex-col">
+    <div className="min-h-screen bg-gray-950 text-gray-100 font-sans flex flex-col reltive">
+      
       <NavbarHeader setActiveSection={setActiveSection} />
 
       <main className="flex-grow relative overflow-hidden">
@@ -34,7 +36,7 @@ function Layout({ activeSection, setActiveSection }) {
               exit: 'animate-slide-out-down', // Classe appliquée à la sortie
             }}
           >
-            <div className="absolute w-full h-full top-0 left-0">
+            <div className=" w-full h-full top-0 left-0 ">
               {sections[activeSection]}
             </div>
           </CSSTransition>
