@@ -6,20 +6,9 @@ import profil from "../images/profil.png"; // ton image
 
 function HeroSection() {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-[100vh]  overflow-auto px-8 md:px-16 lg:px-24 backdrop-blur-lg bg-gray-950/80 text-white">
+    <section className="relative bg-blue-600 flex flex-col md:flex-row items-center justify-between min-h-[90vh] w-full   overflow-auto px-8 md:px-16 lg:px-40 backdrop-blur-lg bg-gray-950/80 text-white">
       {/* Image Section */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        className="relative z-10 w-full md:w-1/2 flex justify-center mb-8 md:mb-0 md:mt-0 mt-28"
-      >
-        <img
-          src={profil}
-          alt="Photo de profil"
-          className="rounded-2xl shadow-2xl max-h-[450px] object-cover  border-4 border-gray-700 hover:scale-105 transition-transform duration-500"
-        />
-      </motion.div>
+
 
       {/* Content Section */}
       <motion.div
@@ -38,8 +27,8 @@ function HeroSection() {
           Développeur <span className="font-semibold">Fullstack</span>
         </h3>
         <p className="text-lg text-gray-400 mb-8 max-w-lg mx-auto md:mx-0">
-          Développeur passionné spécialisé en React, Laravel et Flutter. 
-          J’aime créer des applications performantes et intuitives, 
+          Développeur passionné spécialisé en React, Laravel et Flutter.
+          J’aime créer des applications performantes et intuitives,
           tout en rendant la technologie accessible et agréable.
         </p>
 
@@ -71,6 +60,19 @@ function HeroSection() {
             <FaTwitter size={28} />
           </a>
         </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        className="relative z-10 w-full md:w-1/2 flex justify-end mb-8 md:mb-0 md:mt-0 mt-28"
+      >
+        <img
+          src={profil}
+          alt="Photo de profil"
+          className="rounded-2xl shadow-2xl max-h-[450px] object-cover  border-4 border-gray-700 hover:scale-105 transition-transform duration-500"
+        />
       </motion.div>
     </section>
   );

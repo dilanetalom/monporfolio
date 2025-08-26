@@ -36,7 +36,7 @@ function Layout({ activeSection, setActiveSection }) {
               exit: 'animate-slide-out-down', // Classe appliquée à la sortie
             }}
           >
-            <div className=" w-full h-full top-0 left-0 ">
+            <div className=" w-full h-full top-0 left-0 flex items-center justify-center box-border ">
               {sections[activeSection]}
             </div>
           </CSSTransition>
