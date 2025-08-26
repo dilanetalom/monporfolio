@@ -6,7 +6,7 @@ import profil from "../images/profil.png"; // ton image
 
 function HeroSection() {
   return (
-    <section className="relative bg-blue-600 flex flex-col md:flex-row items-center justify-between min-h-[90vh] w-full   overflow-auto px-8 md:px-16 lg:px-40 backdrop-blur-lg bg-gray-950/80 text-white">
+    <section className="relative bg-blue-600 flex flex-col md:flex-row items-center justify-between min-h-[90vh] w-full   overflow-auto px-8 md:px-16 lg:px-40 backdrop-blur-lg bg-[#F6F6F6] text-gray-950">
       {/* Image Section */}
 
 
@@ -23,10 +23,10 @@ function HeroSection() {
         <h1 className="md:text-5xl text-3xl lg:text-6xl font-extrabold leading-tight mb-4">
           Talom Defo <span className="">Franck Dilane</span>
         </h1>
-        <h3 className="text-2xl lg:text-3xl font-light text-gray-300 mb-6">
-          Développeur <span className="font-semibold">Fullstack</span>
+        <h3 className="text-2xl lg:text-3xl font-light text-gray-950 mb-6">
+          Développeur <span className="font-bold text-[#1e90ff]">Fullstack</span>
         </h3>
-        <p className="text-lg text-gray-400 mb-8 max-w-lg mx-auto md:mx-0">
+        <p className="text-lg text-gray-950 mb-8 max-w-lg mx-auto md:mx-0 opacity-[0.7]">
           Développeur passionné spécialisé en React, Laravel et Flutter.
           J’aime créer des applications performantes et intuitives,
           tout en rendant la technologie accessible et agréable.
@@ -36,13 +36,13 @@ function HeroSection() {
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
           <a
             href="/cv.pdf"
-            className="px-6 py-3 rounded-xl bg-teal-500 text-white font-semibold shadow-lg hover:bg-teal-600 transition"
+            className="px-6 py-3 rounded-xl bg-[#1e90ff] text-white font-semibold shadow-lg hover:bg-gray-950 transition"
           >
             Télécharger CV
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 rounded-xl border border-teal-400 text-teal-400 font-semibold hover:bg-teal-400 hover:text-black transition"
+            className="px-6 py-3 rounded-xl border border-teal-400 text-teal-400 font-semibold hover:bg-[#1e90ff] hover:text-black transition"
           >
             Me contacter
           </a>
