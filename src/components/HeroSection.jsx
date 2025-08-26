@@ -6,7 +6,7 @@ import profil from "../images/profil.png"; // ton image
 
 function HeroSection() {
   return (
-    <section className="relative bg-blue-600 flex flex-col md:flex-row items-center justify-between min-h-[90vh] w-full   overflow-auto px-8 md:px-16 lg:px-40 backdrop-blur-lg bg-[#F6F6F6] text-gray-950">
+    <section className="relative  flex flex-col md:flex-row items-center justify-between min-h-[90vh] w-full   overflow-auto px-8 md:px-16 lg:px-40 backdrop-blur-lg bg-[#F6F6F6] text-gray-950">
       {/* Image Section */}
 
 
