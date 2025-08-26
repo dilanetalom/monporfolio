@@ -34,7 +34,7 @@ function ContactSection() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 rounded-xl shadow-xl bg-gray-900 p-8 md:p-12"
+        className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 rounded-xl shadow-xl md:bg-gray-900 md:p-8 md:p-12"
       >
         {/* Formulaire */}
         <form onSubmit={handleSubmit} className="flex flex-col space-y-6 lg:order-2">
