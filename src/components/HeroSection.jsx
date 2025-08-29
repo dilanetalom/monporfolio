@@ -20,7 +20,7 @@ function HeroSection() {
         {/* <h2 className="text-lg text-teal-400 font-semibold mb-2 uppercase tracking-wider">
           Bienvenue sur mon portfolio
         </h2> */}
-        <h1 className="md:text-5xl text-3xl lg:text-6xl font-extrabold leading-tight mb-4">
+        <h1 className="md:text-5xl md:mt-0 mt-24 text-3xl lg:text-6xl font-extrabold leading-tight mb-4">
           Talom Defo <span className="">Franck Dilane</span>
         </h1>
         <h3 className="text-2xl lg:text-3xl font-light text-gray-950 mb-6">

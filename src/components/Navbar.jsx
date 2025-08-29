@@ -12,7 +12,7 @@ function NavbarHeader({ activeSection, setActiveSection }) {
   // Liens desktop
   const getNavLinkClasses = (sectionName) => {
     const baseClasses =
-      "relative text-gray-950 hover:text-white transition duration-300 py-2 px-2";
+      "relative text-gray-950 hover:text-[#1e90ff]   transition duration-300 py-2 px-2";
     const activeClasses =
       "text-white font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-purple-500 after:rounded-full";
 
@@ -31,7 +31,7 @@ function NavbarHeader({ activeSection, setActiveSection }) {
   return (
     <header className="flex justify-between items-center py-4 h-[10vh] px-8 md:px-16 lg:px-40 fixed top-0 w-full z-50 backdrop-blur-lg bg-[#F6F6F6]  border-gray-800">
       {/* Logo "TD" stylisé */}
-      <div className="flex items-center">
+      <div className="flex items-center cursor-pointer" onClick={() => handleNavLinkClick("home")}>
         <span className="text-2xl font-extrabold tracking-wider flex items-center">
           <span className="px-3 py-1 bg-[#1e90ff] text-[#F6F6F6] rounded-md shadow-md">T</span>
           <span className="ml-1 px-3 py-1 border-2 border-gray-950 text-gray-950 rounded-md">D</span>
@@ -40,35 +40,35 @@ function NavbarHeader({ activeSection, setActiveSection }) {
 
       {/* Navigation desktop */}
       <nav className="hidden md:flex space-x-8 text-lg font-medium">
-        <button onClick={() => handleNavLinkClick("home")} className={getNavLinkClasses("home")}>
+        {/* <button onClick={() => handleNavLinkClick("home")} className={getNavLinkClasses("home")}>
           Home
-        </button>
+        </button> */}
         <button onClick={() => handleNavLinkClick("project")} className={getNavLinkClasses("project")}>
-          Portfolio
+         Realisation
         </button>
         <button onClick={() => handleNavLinkClick("skills")} className={getNavLinkClasses("skills")}>
           Compétences
         </button>
         <button onClick={() => handleNavLinkClick("contact")} className={getNavLinkClasses("contact")}>
-          Contact
+          FAQ
         </button>
       </nav>
 
       {/* Bouton CV desktop */}
-      <div className="hidden md:block">
-        <a
-          href="/cv.pdf"
+      <div className="hidden md:block" >
+        <button
+         onClick={() => handleNavLinkClick("contact")} 
           className="px-5 py-2 rounded-full bg-[#1e90ff] text-[#F6F6F6] font-semibold shadow-md  transition"
         >
-          CV
-        </a>
+          Contact
+        </button>
       </div>
 
       {/* Bouton Burger */}
       <div className="md:hidden">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-gray-100 focus:outline-none p-2 rounded-md hover:bg-gray-800 transition duration-200"
+          className="text-gray-950 focus:outline-none p-2 rounded-md hover:bg-gray-800 transition duration-200"
         >
           {isMenuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -37,8 +37,8 @@ const skills = [
 
 function SkillsTree() {
   return (
-    <section className="relative flex flex-col items-center justify-center py-16 px-8 gap-10 md:px-40 bg-gray-950 text-white ">
-      <h2 className="text-3xl md:text-5xl font-extrabold mt-16 mb-10 text-center text-white drop-shadow-lg">
+    <section className="relative flex flex-col items-center mt-[10vh] h-[80vh] justify-center overflow-auto  py-16 px-8 gap-10 md:px-40 bg-[#F6F6F6] text-white ">
+      <h2 className="text-3xl md:text-5xl font-semibold mb-10 text-center text-[#1e90ff] mt-96 md:mt-0">
         Mes Compétences
       </h2>
 
@@ -57,10 +57,10 @@ function SkillsTree() {
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: 'spring', stiffness: 300 }}
               >
-                <div className="bg-gray-800 p-4 rounded-full shadow-lg">
-                  <Icon size={40} className="text-teal-400" />
+                <div className="bg-white p-4 rounded-full shadow-lg">
+                  <Icon size={40} className="text-gray-950" />
                 </div>
-                <span className="mt-2 text-sm md:text-base text-white">{skill.name}</span>
+                <span className="mt-2 text-sm md:text-base text-gray-950">{skill.name}</span>
               </motion.div>
             );
           })}

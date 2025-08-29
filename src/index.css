@@ -4,6 +4,13 @@
 @tailwind utilities;
 
 
+:root {
+  --background_red:#E73262 ;
+  --foreground: #171717;
+  --container-width-lg: 84%;
+  --container-width-md: 85%;
+  --container-width-sm: 88%;
+}
 
 body {
  padding: 0;

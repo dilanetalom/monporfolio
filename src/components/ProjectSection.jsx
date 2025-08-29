@@ -1,6 +1,10 @@
 // src/components/ProjectSection.js
 import React, { useState, useEffect } from "react";
 
+import ml from "../images/ml.jpg"
+import fenix from "../images/fenix.jpg"
+import free from "../images/free.jpg"
+
 const ProjectCard = ({ title, description, imageUrl, link }) => (
   <div className="bg-gray-800 cursor-pointer rounded-lg shadow-lg overflow-hidden border border-teal-700 hover:border-white transition-all duration-300 group">
     <div className="h-48 md:h-56 overflow-hidden">
@@ -36,9 +40,9 @@ const ProjectCard = ({ title, description, imageUrl, link }) => (
 
 function ProjectSection() {
   const projects = [
-    { id: 1, title: "Site Web E-commerce", description: "Plateforme e-commerce moderne.", imageUrl: "https://via.placeholder.com/600x400/8B5CF6/FFFFFF?text=Project+1", link: "#" },
-    { id: 2, title: "Application Mobile UX", description: "Expérience utilisateur optimisée.", imageUrl: "https://via.placeholder.com/600x400/EC4899/FFFFFF?text=Project+2", link: "#" },
-    { id: 3, title: "Branding & Identité Visuelle", description: "Identité de marque forte.", imageUrl: "https://via.placeholder.com/600x400/14B8A6/FFFFFF?text=Project+3", link: "#" },
+    { id: 1, title: "Site Web entreprise MLConcept  presentaion des services", description: "", imageUrl: ml, link: "https://mlconcept-energie.com/" },
+    { id: 2, title: "Site web de vente d'oeuvres litteraires", description: "", imageUrl: fenix, link: "https://fenix-book.com/" },
+    { id: 3, title: "Plateforme pour freelance, cameroun", description: "", imageUrl:free, link: "https://mymonth.vercel.app/" },
     { id: 4, title: "Dashboard Analytique", description: "Visualisation de données complexes.", imageUrl: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Project+4", link: "#" },
     { id: 5, title: "Portfolio Design", description: "Portfolio créatif et responsive.", imageUrl: "https://via.placeholder.com/600x400/F59E0B/FFFFFF?text=Project+5", link: "#" },
   ];
@@ -68,8 +72,8 @@ function ProjectSection() {
   };
 
   return (
-    <section className="relative w-full flex flex-col items-center py-16 px-4 md:px-16 bg-gray-950">
-      <h2 className="text-3xl md:text-5xl font-extrabold  mt-16 mb-12 text-center text-white drop-shadow-lg">
+    <section className="relative w-full mt-[10vh] h-[80vh]  flex flex-col items-center py-16 px-4 md:px-16 bg-[#F6F6F6]">
+      <h2 className="text-3xl md:text-5xl font-semibold   mb-12 text-center text-[#1e90ff] ">
         Nos Réalisations
       </h2>
 
